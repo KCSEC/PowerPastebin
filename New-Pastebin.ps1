@@ -8,8 +8,6 @@
 [string] $File,
 [switch] $Help
 )
-$Name = [io.path]::GetFileNameWithoutExtension("$File")
-$Paste = Get-Content -LiteralPath $File -Raw
 if ($Help -eq $true){
     [int] $hm = 0
     while($hm -lt 1 -or $hm.choice -gt 6){
@@ -79,6 +77,8 @@ if ($Help -eq $true){
         }
     }
 }
+$Name = [io.path]::GetFileNameWithoutExtension("$File")
+$Paste = Get-Content -LiteralPath $File -Raw
 function post_http($url,$parameters) 
         { 
             $http_request = New-Object -ComObject Msxml2.XMLHTTP 

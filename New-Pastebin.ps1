@@ -21,7 +21,7 @@ if ($Help -eq $true){
         Write-Host "5. Expires"
         Write-Host "6. File"
         Write-Host "Example Call:"
-        Write-Host 'New-Pastebin -APIKey "################################" -Username "Name" -Password "Pass" -Format "Powershell" -Permission "0" -Expires "N" -File "C:\Files\yourfile.ps1"'
+        Write-Host '.\New-Pastebin.ps1 -APIKey "################################" -Username "Name" -Password "Pass" -Format "Powershell" -Permission "0" -Expires "N" -File "C:\Files\yourfile.ps1"'
         [int] $hm = Read-Host "[1-6]:>"
         switch($hm){
             1 {

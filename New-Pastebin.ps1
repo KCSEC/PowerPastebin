@@ -69,7 +69,7 @@ if ($Help -eq $true){
             }
             6 {
                 Clear-Host
-                Write-Host "'File' is the long path to the file you would like to upload to Pastebin."
+                Write-Host "'File' is the full path to the file you would like to upload to Pastebin."
                 pause
                 exit
             }

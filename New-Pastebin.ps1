@@ -27,13 +27,13 @@ if ($Help -eq $true){
                 Write-Host "The api key for your account can be found on pastebin at:"
                 Write-Host ""
                 Write-Host "http://pastebin.com/api#1"
-                pause
+                Read-Host "Press any key to return to powershell..."
                 exit
             }
             2 {
                 Clear-Host
                 Write-Host "Your username and password are the same ones you use for pastebin(they will not be collected or used in any way execpt for pasting your paste, they will also not be saved.):"
-                pause
+                Read-Host "Press any key to return to powershell..."
                 exit
             }
             3 {
@@ -41,7 +41,7 @@ if ($Help -eq $true){
                 Write-Host "'Format' is the syntax highlighting for the code you are uploading, the codes for each format can be found on the Pastebin website at:"
                 write-Host ""
                 Write-Host "http://pastebin.com/api#5"
-                pause
+                Read-Host "Press any key to return to powershell..."
                 exit
             }
             4 {
@@ -51,7 +51,7 @@ if ($Help -eq $true){
                Write-Host "0 = Public"
                Write-Host "1 = Unlisted"
                Write-Host "2 = Private" 
-               pause
+               Read-Host "Press any key to return to powershell..."
                exit
             }
             5 {
@@ -64,13 +64,13 @@ if ($Help -eq $true){
                 Write-Host "1W = 1 Week"
                 Write-Host "2W = 2 Weeks"
                 Write-Host "1M = 1 Month"
-                pause
+                Read-Host "Press any key to return to powershell..."
                 exit
             }
             6 {
                 Clear-Host
                 Write-Host "'File' is the full path to the file you would like to upload to Pastebin."
-                pause
+                Read-Host "Press any key to return to powershell..."
                 exit
             }
             default {exit}
